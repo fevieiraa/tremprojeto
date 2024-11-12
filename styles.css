@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilos do body */
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #1531af;
+    color: #500eb9;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo como texto */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff; /* Cor destacada */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+/* Container de ocorrências para rolagem */
+.ocorrencias-container {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Ocorrências animadas */
+.ocorrencias {
+    font-weight: bold;
+    color: #d9534f; /* Vermelho para chamar atenção */
+    font-size: 1.2em;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: rolando 10s linear infinite;
+}
+
+@keyframes rolando {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#clock {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    margin-top: 40px;
+    width: 40%;
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+
+
+/* Linhas de metrô */
+.linha {
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linha:hover {
+    background-color: #f0f0f0; /* Fundo mais claro ao passar o mouse */
+    color: #333; /* Cor do texto mais escura */
+    border-radius: 5px; /* Adiciona uma leve borda arredondada */
+}
+
+/* Nome da linha e status */
+.linha-nome {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Status de cores */
+.status-superlotado {
+    background-color: #d32f2f;
+}
+
+.status-operaçãomediana {
+    background-color: #fbc02d;
+}
+
+.status-operaçãonormal {
+    background-color: #388e3c;
+}
+
+.linha-metro-linha-azul {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor do texto */
+}
+
+.linha-metro-linha-amarela {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor do texto */
+}
+.linha-metro-linha-verde {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor do texto */
+}
+.linha-metro-linha-vermelha {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor do texto */
+}
+.linha-metro-linha-lilas {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor do texto */
+}
+
+
+
+
+
