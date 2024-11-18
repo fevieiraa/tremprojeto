@@ -70,7 +70,7 @@ header {
 
 #clock {
     font-size: 1.2em;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
     position: absolute;
     top: 20px;
@@ -79,10 +79,10 @@ header {
 
 /* Conteúdo principal */
 .conteudo {
-    margin-top: 40px;
+    margin-top: 5%;
     width: 40%;
     max-width: 600px;
-    margin-left: 40px;
+    margin-left: 35%;
 }
 
 

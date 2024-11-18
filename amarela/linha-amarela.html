@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linha Azul</title>
+    <title>Linha Amarela</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Informações da Linha Amarela</h1>
+   
     
 </body>
 
@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
-    <title>Informativo de Trens</title>
+    
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -36,8 +36,7 @@
             margin-bottom: 10px;
             text-align: center;
             letter-spacing: 1px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(90deg, #ffeb3b, #fbc02d);
+            background: #d8c412;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             padding: 10px 20px;
@@ -64,7 +63,7 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            padding: 0 10px;
+            padding: 30px;
             margin: 90px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -213,6 +212,13 @@
         <div class="estacao" data-info="Luz" onclick="mostrarInfo(event)">
             <div class="nome-estacao">Luz</div>
         </div>
+    </div>
+    
+    <div id="botoes-feedback">
+        <button class="feedback-btn" data-feedback="Metrô devagar">Metrô Devagar</button>
+        <button class="feedback-btn" data-feedback="Metrô lotado">Metrô Lotado</button>
+        <button class="feedback-btn" data-feedback="Metrô vazio">Metrô Vazio</button>
+        <button class="feedback-btn" data-feedback="Metrô quebrado">Metrô Quebrado</button>
     </div>
 
     <div id="informacoes"></div>
