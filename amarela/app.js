@@ -65,10 +65,6 @@ class ControleTrens {
         ];
    
 
-    
-
-    
-
 
         this.distanciaTotal = 1500 * 10;  
         this.tempoTotal = 25; 
@@ -206,5 +202,36 @@ document.querySelectorAll('.estacao').forEach(estacao => {
     estacao.addEventListener('click', function() {
         const estacaoNome = this.textContent.trim();
         controleTrens.mostrarTempoProximaEstacao(estacaoNome);
+    });
+});
+
+//BOTÕES
+
+async function enviarFeedback(feedback) {
+    try {
+        const resposta = await fetch('/api/feedback', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ feedback }),
+        });
+
+        if (resposta.ok) {
+            alert('Feedback enviado com sucesso!');
+        } else {
+            alert('Erro ao enviar feedback. Tente novamente.');
+        }
+    } catch (erro) {
+        console.error('Erro ao enviar feedback:', erro);
+        alert('Erro ao enviar feedback. Verifique sua conexão.');
+    }
+}
+
+// Adiciona evento de clique aos botões
+document.querySelectorAll('.feedback-btn').forEach(botao => {
+    botao.addEventListener('click', () => {
+        const feedback = botao.dataset.feedback; 
+        enviarFeedback(feedback); 
     });
 });
